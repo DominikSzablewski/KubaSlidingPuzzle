@@ -1,0 +1,163 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #1b1b1b;
+}
+
+.wrapper {
+	width: 300px;
+	height: 300px;
+	position: relative;
+}
+
+.tile {
+	display: none;
+	position: absolute;
+	border: 1px solid white;
+	width: 100px;
+	height: 100px;
+	color: transparent;
+	font-size: 0px;
+	transition: left 0.3s linear, top 0.3s linear;
+	background-image: url('img2.png');
+}
+
+.tile:last-of-type {
+	background: none;
+	border: none;
+}
+
+.game {
+	width: 300px;
+	height: 300px;
+	position: relative;
+}
+.settingsBtn {
+	display: none;
+	position: absolute;
+	top: -20px;
+	left: 305px;
+	color: rgb(227, 235, 238);
+	font-size: 25px;
+}
+.settings {
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(149, 149, 175, 1);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(149, 149, 175, 1);
+	box-shadow: 0px 0px 8px 0px rgba(149, 149, 175, 1);
+}
+
+.choose,
+.accept,
+.randomTile,
+.sortTile {
+	font-family: 'Montserrat', sans-serif;
+	margin: 5px;
+	text-align: center;
+}
+
+.choose ul li,
+.randomTile,
+.sortTile {
+	list-style: none;
+
+	padding: 10px 20px 10px 20px;
+	margin-top: 8px;
+	background-color: aqua;
+	transition: background-color 0.3s linear;
+}
+
+.choose ul li:hover,
+.randomTile:hover,
+.sortTile:hover {
+	background-color: rgb(30, 168, 168);
+	cursor: pointer;
+}
+.chooseClick {
+	background-color: rgb(185, 13, 108) !important;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.accept {
+	font-size: 17px;
+	font-weight: bold;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.accept button {
+	font-size: 25px;
+	margin: 3px;
+}
+
+.settingsShow,
+.settingsBtnShow,
+.tileShow {
+	display: block;
+}
+
+.wrapperHide,
+.settingsHide {
+	display: none;
+}
+
+.header {
+	/* font-family: 'Playball', cursive; */
+	font-family: 'Montserrat', sans-serif;
+	padding: 10px;
+	font-size: 23px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.gameHeader {
+	position: absolute;
+	width: 300px;
+	top: -55px;
+	color: rgb(227, 235, 238);
+	padding: 5px;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+	/* font-family: 'Montserrat', sans-serif; */
+	font-family: 'Playball', cursive;
+}
+.tileSettings,
+.randomTile,
+.sortTile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.randomTile,
+.sortTile {
+	height: 60px;
+	width: 140px;
+}
+
+.error p {
+	display: none;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	color: red;
+	font-weight: bold;
+	width: 300px;
+	height: 50px;
+	font-size: 11px;
+}
+.errorShow {
+	display: block !important;
+}
