@@ -69,11 +69,11 @@ body {
 .randomTile,
 .sortTile {
 	list-style: none;
-
 	padding: 10px 20px 10px 20px;
 	margin-top: 8px;
 	background-color: aqua;
 	transition: background-color 0.3s linear;
+	font-size: 13px;
 }
 
 .choose ul li:hover,
@@ -85,11 +85,11 @@ body {
 .chooseClick {
 	background-color: rgb(185, 13, 108) !important;
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 12.5px !important;
 }
 
 .accept {
-	font-size: 16px;
+	font-size: 12px;
 	font-weight: bold;
 	padding: 10px;
 	display: flex;
@@ -98,7 +98,7 @@ body {
 }
 
 .accept button {
-	font-size: 24px;
+	font-size: 25px;
 	margin: 4px;
 }
 
@@ -117,7 +117,7 @@ body {
 	/* font-family: 'Playball', cursive; */
 	font-family: 'Montserrat', sans-serif;
 	padding: 10px;
-	font-size: 23px;
+	font-size: 19px;
 	font-weight: bold;
 	text-align: center;
 }
@@ -131,7 +131,6 @@ body {
 	font-size: 31px;
 	font-weight: bold;
 	text-align: center;
-	/* font-family: 'Montserrat', sans-serif; */
 	font-family: 'Playball', cursive;
 }
 .tileSettings,
@@ -155,7 +154,7 @@ body {
 	color: red;
 	font-weight: bold;
 	width: 300px;
-	height: 50px;
+	height: 65px;
 	font-size: 11px;
 }
 .errorShow {
