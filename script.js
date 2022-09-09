@@ -33,7 +33,6 @@ const gameRandomValue = [
 let uniqueRandom = []
 let max = 8
 let randomInterval
-let protectTemp = 'false'
 let chooseBoardValue = 0
 
 const random = () => {
