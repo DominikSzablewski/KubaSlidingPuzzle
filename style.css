@@ -125,10 +125,10 @@ body {
 .gameHeader {
 	position: absolute;
 	width: 300px;
-	top: -55px;
+	top: -48px;
 	color: rgb(227, 235, 238);
-	padding: 5px;
-	font-size: 35px;
+	padding: 3px;
+	font-size: 31px;
 	font-weight: bold;
 	text-align: center;
 	/* font-family: 'Montserrat', sans-serif; */
